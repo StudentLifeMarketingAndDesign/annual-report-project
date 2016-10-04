@@ -18,7 +18,7 @@
     
     <script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="{$ThemeDir}/js/plugins/modernizr-2.5.3.min.js"></script>
+    <script src="annual-report-project/js/plugins/modernizr-2.5.3.min.js"></script>
 
     <!-- Open Graph -->
     <meta property="og:type"     content="article"> 
@@ -29,7 +29,7 @@
     <meta property="og:description"  content="$Excerpt">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
+    <link rel="shortcut icon" href="annual-report-project/images/favicon.ico" />
 </head>
 
 <body class="$ClassName">
@@ -39,12 +39,12 @@
     <div id="content-wrapper" class="clearfix">
 
         <article id="main" class="article" role="main">
-            <img src="{$ThemeDir}/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
+            <img src="annual-report-project/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
             <div id='background-video' class='visible-md visible-lg'>
             <video autoplay loop preload class="fill">
-                <source class="mp4" src="{$ThemeDir}/video/{$RandomVideo}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-                <source class="webm" src="{$ThemeDir}/video/{$RandomVideo}.webm" type='video/webm; codecs="vp8, vorbis"' />
-                <source class="ogv" src="{$ThemeDir}/video/{$RandomVideo}.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source class="mp4" src="annual-report-project/video/{$RandomVideo}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source class="webm" src="annual-report-project/video/{$RandomVideo}.webm" type='video/webm; codecs="vp8, vorbis"' />
+                <source class="ogv" src="annual-report-project/video/{$RandomVideo}.ogv" type='video/ogg; codecs="theora, vorbis"' />
             </video>
           </div>
         </article>

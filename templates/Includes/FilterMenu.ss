@@ -1,6 +1,6 @@
 <div class="menu">
     <a href="{$BaseHref}" class="oldcap-logo">
-        <img src="{$ThemeDir}/images/capitol.png" alt="University of Iowa Capitol">
+        <img src="annual-report-project/images/capitol.png" alt="University of Iowa Capitol">
     </a>
         <strong class="year">
             <form action="{$Link}" method="post" enctype="multipart/form-data">

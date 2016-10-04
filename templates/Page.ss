@@ -13,12 +13,12 @@
 
 	<!-- JS -->
 	<!--[if lt IE 9]>
-		<script src="{$ThemeDir}/js/plugins/respond.min.js"></script>
+		<script src="annual-report-project/js/plugins/respond.min.js"></script>
 	<![endif]-->
 	
 	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script src="{$ThemeDir}/js/plugins/modernizr-2.5.3.min.js"></script>
+	<script src="annual-report-project/js/plugins/modernizr-2.5.3.min.js"></script>
 
 	<!-- Open Graph -->
 	<meta property="og:type"	 content="article"> 
@@ -29,7 +29,7 @@
 	<meta property="og:description"  content="$Excerpt">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
+	<link rel="shortcut icon" href="annual-report-project/images/favicon.ico" />
 </head>
 
 <body class="$ClassName">
