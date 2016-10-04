@@ -41,7 +41,7 @@
         <article id="main" class="article" role="main">
             <img src="annual-report-project/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
             <div id='background-video' class='visible-md visible-lg'>
-            <video autoplay loop preload class="fill">
+            <video autoplay loop preload muted class="fill">
                 <source class="mp4" src="annual-report-project/video/{$RandomVideo}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                 <source class="webm" src="annual-report-project/video/{$RandomVideo}.webm" type='video/webm; codecs="vp8, vorbis"' />
                 <source class="ogv" src="annual-report-project/video/{$RandomVideo}.ogv" type='video/ogg; codecs="theora, vorbis"' />

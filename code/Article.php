@@ -30,7 +30,7 @@ class Article extends Page {
 		$fields->addFieldToTab("Root.Main", new TextField("Department", "Department"));
 		$fields->addFieldToTab("Root.Main", new TextField("WordsBy", "Written By:"));
 		$fields->addFieldToTab("Root.Main", new TextareaField("Excerpt", "Excerpt"));
-		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo"));
+		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo (1024 x 683 preferred)"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content"));
 		
 		$categoriesMap = array();
@@ -40,13 +40,9 @@ class Article extends Page {
 		}
 		asort($categoriesMap);
 		
-		$categoriesField = ListboxField::create('Categories', 'Categories <a href="admin/categories/" target="_blank">Add/Edit</a>')
-			->setMultiple(true)
-			->setSource($categoriesMap)
-			->setAttribute(
-				'data-placeholder', 
-				'Add Categories'
-			);
+		$categoriesField = TagField::create('Categories', 'Categories <a href="admin/categories/" target="_blank">Add/Edit</a>', Category::get(), $this->Categories())
+			->setShouldLazyLoad(true) // tags should be lazy loaded
+    		->setCanCreate(true);
 		$fields->addFieldToTab( 'Root.Main', $categoriesField, "Content" );
 		
 		return $fields;

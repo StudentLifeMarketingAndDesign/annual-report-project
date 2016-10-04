@@ -15,11 +15,20 @@ class Issue extends Page {
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
-		$videoField = new GridField('AnnualVideos', 'Annual Videos', $this->AnnualVideos(), GridFieldConfig_RelationEditor::create());
-		$categoryField = new GridField('Categories', 'Categories', $this->Categories(), GridFieldConfig_RelationEditor::create());
+
+		$categoryField = TagField::create(
+			'Categories', 'Show the following categories in the sidebar:', 
+			Category::get(), 
+			$this->Categories())
+			->setShouldLazyLoad(true)
+			->setCanCreate(true);
+
+		$videoField = new GridField('AnnualVideos', 'Cover Video(s)', $this->AnnualVideos(), GridFieldConfig_RelationEditor::create());
+
 		$f->removeFieldFromTab("Root.Main","Content");
+		$f->addFieldtoTab("Root.Main", $categoryField);
         $f->addFieldtoTab("Root.Main", $videoField);
-        $f->addFieldtoTab("Root.Main", $categoryField);
+        
         
         // Create a tab named "Students" and add our field to it
         //$f->addFieldToTab('Root.Main', $videosField); 
