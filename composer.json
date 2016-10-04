@@ -1,6 +1,7 @@
 {
     "name": "md/annual-report-project",
     "description": "Division of Student Life Annual Report Project",
+    "type": "silverstripe-module",
     "require": {
         "php": ">=5.3.2",
         "silverstripe/cms": "3.4.1",
