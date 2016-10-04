@@ -1,0 +1,21 @@
+{
+    "name": "md/annual-report-project",
+    "description": "Division of Student Life Annual Report Project",
+    "require": {
+        "php": ">=5.3.2",
+        "silverstripe/cms": "3.4.*@stable",
+        "silverstripe/framework": "3.4.*@stable",
+        "md/division-bar": "*"
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
+
+        }
+     ],
+    "minimum-stability": "dev"
+}
+
+

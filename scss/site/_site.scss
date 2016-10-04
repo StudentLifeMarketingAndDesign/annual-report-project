@@ -1,0 +1,65 @@
+/* Base styles
+========================================================================== */
+html, body {
+	height: 100%;
+}
+html {
+	font-size: $base-font-size;
+}
+body {
+	background: #fff;
+	color: #444;
+	font-family: $body-font;
+	font-size: $base-font-size;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	
+}
+body.HomePage {
+	@media screen and (max-width: $break-medium) {
+		background: url(../images/fallback.jpg) no-repeat 0 0;
+		background-size: contain;
+	}
+}
+
+
+/* Layout
+========================================================================== */
+#content-wrapper {
+	position: relative;
+	@media screen and (min-width: $break-large) {
+		height: 100%;
+	}
+}
+
+/* Division Bar */
+body .division-topbar {
+	z-index: 1;
+	@media screen and (min-width: $break-medium) {
+		position: relative;
+		z-index: 100;
+		box-shadow: 0 5px 5px rgba(0,0,0,.15);
+	}
+}
+.division-topbar .wrapper {
+	@media screen and (min-width: $break-large) {
+		max-width: none;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+/* BOOTSTRAP Affix menu to top of page */
+.affix-top {
+	@media screen and (min-width: $break-large) {
+		position: absolute;
+		top: 0;
+	}
+}
+.affix {
+	@media screen and (min-width: $break-large) {
+		position: fixed;
+		top: 0;
+	}
+}

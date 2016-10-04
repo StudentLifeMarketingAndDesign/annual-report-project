@@ -1,0 +1,46 @@
+
+/* Video
+========================================================================== */
+#background-video {
+	display: none;
+	@media screen and (min-width: $break-large) {
+		display:block;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+}
+#background-video .fill {
+	position: absolute;
+	z-index: -1000;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-color: transparent;
+}
+.home-content {
+	@media screen and (min-width: $break-large) {
+		height: 100%;
+	}
+}
+
+.dosl-img {
+	display: none;
+	@media screen and (min-width: $break-large) {
+		display: block;
+		position: absolute;
+		bottom: 10%;
+		padding: 0;
+		left: 50%;
+		margin-left: -200px;
+		z-index: 1;
+	}
+}
+
+
+
+
+
