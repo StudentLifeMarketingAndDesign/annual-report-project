@@ -33,14 +33,24 @@
 			</li>
 		</ul>
 		<% if $Categories %>
-			Filed under: 
-			<% loop $Categories %>
-				$Title<% if not $Last %>, <% end_if %>
-			<% end_loop %>
+			<div class="article-cat-container">
+				Filed under: 
+				<% loop $Categories %>
+					$Title<% if not $Last %>, <% end_if %>
+				<% end_loop %>
+			</div>
 		<% end_if %>
 		<% if $NextArticle %>
 			<hr />
-			<div id="article-nav"></div>
+			<div class="article-nav-container">
+				<h2>Next:</h2>
+
+				<div id="article-nav">
+					<% with $NextArticle %>
+						<% include ArticlePreviewLink %>
+					<% end_with %>
+				</div>
+			</div>
 		<% end_if %>
 	</div>
 	</div>

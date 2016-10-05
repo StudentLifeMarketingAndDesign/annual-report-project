@@ -1,13 +1,16 @@
 .article-body, .article-header {
 	margin: 0 auto;
 	width: 85%;
+
 	@media screen and (min-width: $break-xlarge) {
 		width: 65%;
 	}
 }
+
 .article-body {
 	padding-bottom: 3em;
 }
+
 .article-img img {
 	display: block;
 	width: 100%;
@@ -17,10 +20,12 @@
 ========================================================================== */
 .article-header {
 	padding-top: 1em;
+
 	@media screen and (min-width: $break-medium) {
 		padding-top: 2.2em;
 	}
 }
+
 .article-dept {
 	color: $highlight;
 	display: block;
@@ -28,18 +33,22 @@
 	letter-spacing: 1px;
 	line-height: 1.2;
 }
+
 .article-img {
 	margin: 2em 0 1em;
 }
+
 .article-title {
 	background: #fff;
 	font-size: 27px;
 	margin: .2em 0 .3em;
 	padding: 0;
 	text-transform: none;
+
 	@media screen and (min-width: $break-medium) {
 		font-size: 45px;
 	}
+
 	@media screen and (min-width: $break-large) {
 		font-size: 50px;
 	}
@@ -48,6 +57,7 @@
 .article-meta {
 	text-transform: uppercase;
 }
+
 .article-meta p {
 	color: #888;
 	font-family: $heading-font;
@@ -55,6 +65,7 @@
 	letter-spacing: 1px;
 	margin: 0;
 }
+
 .article-meta p em {
 	color: #333;
 	font-family: $body-font;
@@ -66,7 +77,6 @@
 	text-transform: none;
 }
 
-
 /* Excerpt
 ========================================================================== */
 .article-excerpt {
@@ -76,7 +86,6 @@
 	margin: 1.5em 0;
 }
 
-
 /* Article Content
 ========================================================================== */
 .article-content {
@@ -85,23 +94,28 @@
 		margin-bottom: 1em;
 	}
 }
+
 .article-content > p:first-of-type {
 	@media screen and (min-width: $break-small) {
 		font-size: 20px;
 	}
 }
+
 .article-content blockquote {
 	border-bottom: 1px dotted #ccc;
 	border-top: 1px dotted #ccc;
+
 	@media screen and (min-width: $break-large) {
 		margin-right: 2em;
 		float: left;
 		width: 45%;
 	}
+
 	@media screen and (min-width: $break-xlarge) {
 		margin-left: -15%;
 	}
 }
+
 .article-content blockquote p {
 	color: $highlight;
 	font-size: 21px;
@@ -109,39 +123,46 @@
 	margin: 15px 0;
 	text-align: right;
 }
-.cssgradients .article-content blockquote p {
 
-	background: -webkit-gradient(linear,left top,left bottom,from(#c39e2c),to(#564f38));
+.cssgradients .article-content blockquote p {
+	background: -webkit-gradient(linear, left top, left bottom, from(#c39e2c), to(#564f38));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .article-content blockquote.right {
 	& p {
 		text-align: left;
 	}
+
 	@media screen and (min-width: $break-large) {
 		float: right;
 		margin-left: 2em;
 		text-align: right;
 	}
+
 	@media screen and (min-width: $break-xlarge) {
 		margin-right: -15%;
 	}
 }
+
 .article-content .full-image {
 	border-bottom: 1px dotted #ccc;
 	border-top: 1px dotted #ccc;
 	margin: 1.5em 0;
+
 	@media screen and (min-width: $break-xlarge) {
 		margin-left: -15%;
 		margin-right: -15%;
 	}
 }
+
 .article-content .full-image img {
 	display: block;
 	margin: 15px 0;
 	width: 100%;
 }
+
 .article-content > p:first-of-type:first-letter {
 	float: left;
 	color: #111;
@@ -153,18 +174,38 @@
 	font-family: Georgia;
 }
 
+.article-cat-container {
+	color: #666;
+	font-style: italic;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#article-nav {
+	a.preview-link {
+		padding: 0;
+
+		&:hover {
+			background: none;
+		}
+	}
+}
+
 /* Captions */
 .captionImage {
 	margin-bottom: 1em;
 }
+
 .captionImage .caption {
 	font-size: 13px;
 	margin: 0;
 }
+
 .captionImage.left {
 	float: left;
 	margin-right: 1em;
 }
+
 .captionImage.right {
 	float: right;
 	margin-left: 1em;
