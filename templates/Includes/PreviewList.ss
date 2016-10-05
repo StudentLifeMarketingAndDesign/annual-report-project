@@ -2,7 +2,7 @@
 	<ul id="isotope-menu">
 		<% with Issue %>
 		<% loop $Children %>
-		<li class="item <% loop $Categories %>$Title <% end_loop %> $LinkingMode">
+		<li class="item <% loop $Categories %>$Title <% end_loop %> $LinkingMode" data-id="{$ID}">
 			<a href="{$Link}#" class="preview-link $LinkingMode" title="Go to the $Title.XML article">
 				<% if $Photo %><img src="$Photo.CroppedImage(150,150).URL" class="preview-thumb" alt="$Title"><% end_if %>
 				<h3 class="preview-title">$MenuTitle.XML</h3>

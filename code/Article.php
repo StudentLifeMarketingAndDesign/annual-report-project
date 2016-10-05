@@ -48,6 +48,23 @@ class Article extends Page {
 		return $fields;
 		
 	}
+
+	public function NextArticle() {
+		$page = Page::get()->filter(array(
+				'ParentID'         => $this->ParentID,
+				'Sort:GreaterThan' => $this->Sort,
+			))                          ->First();
+
+		return $page;
+	}
+	public function PreviousArticle() {
+		$page = Page::get()->filter(array(
+				'ParentID'      => $this->ParentID,
+				'Sort:LessThan' => $this->Sort,
+			))                       ->Last();
+
+		return $page;
+	}
 	
 	//public static $allowed_children = array("");
 

@@ -22,7 +22,7 @@
 			contentSelector = '#content,article:first,.article:first,.post:first',
 			$content = $(contentSelector).filter(':first'),
 			contentNode = $content.get(0),
-			$menu = $('#menu,#nav,nav:first,.nav:first').filter(':first'),
+			$menu = $('#menu,#nav,nav:first,.nav:first,#article-nav').filter(':first'),
 			activeClass = 'active selected current youarehere',
 			activeSelector = '.active,.selected,.current,.youarehere',
 			menuChildrenSelector = '> li,> ul > li',
@@ -76,6 +76,7 @@
 			
 			// Ajaxify
 			$this.find('a:internal:not(.no-ajaxy)').click(function(event){
+				
 				// Prepare
 				var
 					$this = $(this),

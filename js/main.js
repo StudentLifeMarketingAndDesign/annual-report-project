@@ -16,7 +16,7 @@ $(function(){
   var $container = $('#isotope-menu');
   triggerIsotope();
 });
-// trigger Isotope when fonts have loaded
+// trigger Isotope AFTER when fonts have loaded, prevents isotope from triggering before fonts have loaded, fixes some layout issues.
 Typekit.load({
   active: triggerIsotope,
   inactive: triggerIsotope
@@ -44,10 +44,6 @@ jQuery(document).ready(function($) {
     //     $('.preview-list').perfectScrollbar({wheelSpeed:20});
 
     // }
-
-});
-
-jQuery(document).ready(function($) {
 
     //fitvids.js
     $(".article-body").fitVids();
@@ -84,6 +80,23 @@ jQuery(document).ready(function($) {
       window.location.href=$(this).val();
     }
   });
+
+  $(window).bind('statechangecomplete',function(){
+    var nextLink = '';
+    var currentID = $('#article-body').attr('data-id');
+    var currentNavItem = $('#isotope-menu li[data-id="'+currentID+'"]');
+
+    var nextNavItem = currentNavItem.next().clone();
+    var nextAnchor = nextNavItem.find('a');
+
+    // var nextNavLinkURL = nextNavItem
+
+    //console.log(nextAnchor);
+    $(".article-body #article-nav").html(nextNavItem.html());
+
+    $(document.body).ajaxify();
+  });
+
 
 });
 

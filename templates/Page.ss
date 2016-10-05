@@ -25,8 +25,8 @@
 	<meta property="og:url"		 content="$AbsoluteLink">
 	<meta property="og:site_name"	 content="Division of Student Life Annual Report">
 	<meta property="og:image"	 content="$Photo.AbsoluteURL">
-	<meta property="og:title"	 content="$Title">
-	<meta property="og:description"  content="$Excerpt">
+	<meta property="og:title"	 content="$Title.ATT">
+	<meta property="og:description"  content="$Excerpt.ATT">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="annual-report-project/images/favicon.ico" />

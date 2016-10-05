@@ -1,5 +1,6 @@
 <div id="content-wrapper" class="clearfix">
-	<article id="main" class="article" role="main">
+	<article id="main" class="article" role="main" >
+	<div id="article-body" data-id="{$ID}">
 	<header class="article-header">
 		<% if $Department %><em class="article-dept">$Department</em><% end_if %>
 		<h1 class="article-title">$Title</h1>
@@ -31,6 +32,17 @@
 				<a href="https://plus.google.com/share?url=$AbsoluteLink" title="Share on Google Plus"><span class="social-icon icon-googleplus"></span><span class="count">+1</span></a>
 			</li>
 		</ul>
+		<% if $Categories %>
+			Filed under: 
+			<% loop $Categories %>
+				$Title<% if not $Last %>, <% end_if %>
+			<% end_loop %>
+		<% end_if %>
+		<% if $NextArticle %>
+			<hr />
+			<div id="article-nav"></div>
+		<% end_if %>
+	</div>
 	</div>
 	</article>
   <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
