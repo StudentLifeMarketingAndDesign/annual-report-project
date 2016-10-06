@@ -1,7 +1,11 @@
 <div id="content-wrapper" class="clearfix">
 
     <article id="main" class="article" role="main">
-        <img src="annual-report-project/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life" />
+            <% if $SiteConfig.LogoImage %>
+            	<img src="{$SiteConfig.LogoImage.URL}" class="dosl-img" alt="$SiteConfig.Title">
+            <% else %>
+                <img src="annual-report-project/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
+            <% end_if %>
         <div id='background-video' class='visible-md visible-lg'>
         <% if $RandomVideo %>
 	        <% with $RandomVideo %>

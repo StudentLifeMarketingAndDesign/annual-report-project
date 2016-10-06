@@ -39,7 +39,12 @@
     <div id="content-wrapper" class="clearfix">
 
         <article id="main" class="article" role="main">
-            <img src="annual-report-project/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
+            <% if $LogoImage %>
+
+            <% else %>
+                <img src="annual-report-project/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
+            <% end_if %>
+            
             <div id='background-video' class='visible-md visible-lg'>
             <video autoplay loop preload muted class="fill">
                 <source class="mp4" src="annual-report-project/video/{$RandomVideo}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />

@@ -22,7 +22,7 @@
 			contentSelector = '#content,article:first,.article:first,.post:first',
 			$content = $(contentSelector).filter(':first'),
 			contentNode = $content.get(0),
-			$menu = $('#menu,#nav,nav:first,.nav:first,#article-nav').filter(':first'),
+			$menu = $('#menu,#nav,nav:first,.nav:first').filter(':first'),
 			activeClass = 'active selected current youarehere',
 			activeSelector = '.active,.selected,.current,.youarehere',
 			menuChildrenSelector = '> li,> ul > li',
@@ -32,8 +32,8 @@
 			$body = $(document.body),
 			rootUrl = History.getRootUrl(),
 			scrollOptions = {
-				duration: 800,
-				easing:'swing'
+				duration: 200,
+				easing:'linear'
 			};
 		
 		// Ensure Content
@@ -168,7 +168,7 @@
 					});
 
 					// Complete the change
-					if ( $body.ScrollTo||false ) { $body.ScrollTo(scrollOptions); } /* http://balupton.com/projects/jquery-scrollto */
+					if ( $body.ScrollTo||false ) { $body.ScrollTo(scrollOptions); }else{alert('no scrollto');} /* http://balupton.com/projects/jquery-scrollto */
 					$body.removeClass('loading');
 					$window.trigger(completedEventName);
 	

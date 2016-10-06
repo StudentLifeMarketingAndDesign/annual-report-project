@@ -1,14 +1,11 @@
 <?php
 class HomePage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		
 	
 	);
 
-	public static $has_one = array(
-
-	);
 	
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
@@ -17,6 +14,7 @@ class HomePage extends Page {
 		$fields->removeByName("Metadata");
 
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content"));
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField("LogoImage", "Logo (400 pixels wide preferred)"));
 		
 		return $fields;
 		
@@ -42,7 +40,7 @@ class HomePage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

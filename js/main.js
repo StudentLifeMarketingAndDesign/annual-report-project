@@ -86,7 +86,9 @@ jQuery(document).ready(function($) {
     var currentID = $('#article-body').attr('data-id');
     var currentNavItem = $('#isotope-menu li[data-id="'+currentID+'"]');
 
-    var nextNavItem = currentNavItem.next().clone();
+    var nextNavItem = currentNavItem.nextAll(':visible').not(currentNavItem);
+
+    var nextNavItemClone = nextNavItem.clone();
     var nextAnchor = nextNavItem.find('a');
 
     // var nextNavLinkURL = nextNavItem

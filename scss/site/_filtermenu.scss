@@ -233,3 +233,47 @@
 		color: #111;
 	}
 }
+
+#archive-filter {
+	border-top: none;
+	display: none;
+
+	@media screen and (min-width: $break-large) {
+		display: block;
+	}
+
+	> ul {
+		li {
+			border-top: none;
+		}
+	}
+}
+
+.archive-toggle {
+	// @extend .heading-sec;
+	color: #afafaf;
+	font-size: 12px;
+	background: none;
+	border: none;
+	font-family: $heading-font;
+	text-align: center;
+	display: block;
+	padding: 8px 0;
+	width: 100%;
+}
+
+#collapseArchive {
+	ul {
+		margin: 0;
+
+		li {
+			list-style-type: none;
+
+			a {
+				font-size: 12px;
+				padding: 5px 0;
+				color: #afafaf;
+			}
+		}
+	}
+}

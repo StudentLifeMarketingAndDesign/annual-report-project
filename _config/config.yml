@@ -1,3 +1,6 @@
 Page:
   extensions:
     - AnnualReportPageExtension
+SiteConfig:
+  extensions:
+    - AnnualReportSiteConfigExtension

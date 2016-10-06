@@ -13,6 +13,8 @@ class AnnualVideo extends DataObject {
 			
 	);
 	
+	private static $singular_name = 'Cover Video';
+	private static $plurla_name = 'Cover Videos';
 	
 
 	

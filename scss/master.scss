@@ -8,6 +8,7 @@
 @import "global/_normalize";
 @import "global/_typography";
 @import "global/_global";
+@import "global/_vendor-prefixes";
 
 /* Element Imports
 -------------------------------------------*/
@@ -21,6 +22,7 @@
 -------------------------------------------*/
 @import "plugins/_isotope";
 @import "plugins/_socialcount-with-icons";
+@import "plugins/fa/font-awesome";
 
 /* Layout
 -------------------------------------------*/

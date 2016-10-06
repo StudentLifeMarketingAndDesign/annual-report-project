@@ -8,7 +8,9 @@ class AnnualReportPageExtension extends DataExtension {
 	);
 
 	public function Issues(){
-		return Issue::get();
+		$holder = IssueHolder::get()->First();
+		$issues = $holder->Children();
+		return $issues->reverse();
 	}
 
 }
