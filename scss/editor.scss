@@ -1,0 +1,22 @@
+/* Configuration
+-------------------------------------------*/
+@import "_config";
+
+
+	/* Global Settings
+-------------------------------------------*/
+@import "global/_mixins";
+@import "global/_typography";
+@import "global/_global";
+@import "global/_vendor-prefixes";
+
+@import "elements/_tables";
+
+body {
+	background: #fff;
+	color: #444;
+	font-family: $body-font;
+	font-size: $base-font-size;
+	line-height: 1.6;
+}
+
