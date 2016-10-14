@@ -16,8 +16,7 @@
 		<script src="annual-report-project/js/plugins/respond.min.js"></script>
 	<![endif]-->
 	
-	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	$TypeKit
 	<script src="annual-report-project/js/plugins/modernizr-2.5.3.min.js"></script>
 
 	<!-- Open Graph -->

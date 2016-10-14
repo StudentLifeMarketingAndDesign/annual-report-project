@@ -12,11 +12,15 @@
 
 @import "elements/_tables";
 
+@import "site/article";
+
 body {
 	background: #fff;
 	color: #444;
 	font-family: $body-font;
 	font-size: $base-font-size;
 	line-height: 1.6;
+
+	@extend .article-content;
 }
 
