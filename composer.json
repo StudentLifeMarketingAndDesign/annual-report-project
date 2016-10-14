@@ -7,7 +7,8 @@
         "silverstripe/cms": "3.4.1",
         "silverstripe/framework": "3.4.1",
         "silverstripe/tagfield" : "*",
-        "md/division-bar": "*"
+        "md/division-bar": "*",
+	"studiobonito/silverstripe-typekit" : "dev-master"
     },
 
     "repositories": [
