@@ -9,7 +9,7 @@
         "silverstripe/framework": "3.4.1",
         "silverstripe/tagfield" : "*",
         "md/division-bar": "*",
-	"studiobonito/silverstripe-typekit" : "1.1.0"
+	"studiobonito/silverstripe-typekit" : "*"
     },
 
     "repositories": [
